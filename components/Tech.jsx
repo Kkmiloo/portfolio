@@ -7,10 +7,10 @@ export default function Tech() {
     <div className='sm:px-16 px-6 sm:py-16 py-10 mx-auto relative -mt-96 text-white'>
       <div className='mx-auto flex flex-col max-w-7xl pt-14 '>
         <h2 className=' text-[40px]  font-extrabold'>
-          Tecnologías y herramientas.
+          Tecnologías y herramientas
         </h2>
 
-        <div className='w-full mt-10 text-black  font-medium flex lg:flex-row flex-col align-middle justify-evenly  bg-white border border-gray-200 rounded-xl shadow dark:bg-gray-800 dark:border-gray-700'>
+        <div className='w-full mt-10 text-black  font-medium flex lg:flex-row flex-col align-middle justify-evenly  bg-white border border-gray-200 rounded-xl shadow'>
           {services.map((service) => (
             <div
               key={service.title}

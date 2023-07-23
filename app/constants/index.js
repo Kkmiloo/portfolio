@@ -19,20 +19,23 @@ import {
   spring,
   java,
   sql,
+  vivo,
+  tracker,
+  vivoProto,
 } from '@/app/assets';
 
 export const navLinks = [
   {
     id: 'about',
-    title: 'About',
+    title: 'Sobre mi',
   },
   {
     id: 'work',
-    title: 'Work',
+    title: 'Experiencia',
   },
   {
     id: 'contact',
-    title: 'Contact',
+    title: 'Contacto',
   },
 ];
 
@@ -58,10 +61,10 @@ export const services = [
         name: 'React JS',
         icon: reactjs,
       },
-      {
+      /*       {
         name: 'Redux Toolkit',
         icon: redux,
-      },
+      }, */
       {
         name: 'Tailwind CSS',
         icon: tailwind,
@@ -98,7 +101,7 @@ export const services = [
   {
     title: 'Cloud ',
     icon: cloud,
-    desc: 'Conocimientos para desplegar aplicaciones y servicios a la nube.',
+    desc: 'Con conocimientos para desplegar aplicaciones y servicios a la nube.',
     techs: [
       {
         name: 'AWS',
@@ -147,5 +150,72 @@ export const works = [
       },
     ],
     dateRange: 'Junio 2022 - Marzo 2023',
+  },
+];
+
+export const projects = [
+  {
+    title: 'CRIS UAO',
+    image: vivo,
+    link: 'https://www.youtube.com/watch?v=wvozyYr3qCE&feature=youtu.be',
+    description:
+      'Rediseño completo de la interfaz gráfica del software libre y gratuito VIVO, siguiendo los patrones de diseño de la Universidad Autónoma de Occidente. Mi objetivo fue mejorar significativamente la usabilidad del sistema.',
+    techs: [
+      {
+        name: 'HTML, CSS, JS',
+        colorClass: 'bg-red-600',
+      },
+      {
+        name: 'Java',
+        colorClass: 'bg-blue-600',
+      },
+      {
+        name: 'SPARQL',
+        colorClass: 'bg-blue-400',
+      },
+      {
+        name: 'Docker',
+        colorClass: 'bg-blue-500',
+      },
+      {
+        name: 'FreeMarker',
+        colorClass: 'bg-green-600',
+      },
+    ],
+  },
+  {
+    title: 'Expense Tracker',
+    image: tracker,
+    description:
+      'Realicé una aplicación donde puedes llevar un registro preciso de tus gastos diarios. ',
+    link: 'https://kkmiloo.github.io/Expense-Tracker.github.io/',
+
+    techs: [
+      {
+        name: 'HTML, CSS, JS',
+        colorClass: 'bg-red-600',
+      },
+      {
+        name: 'React',
+        colorClass: 'bg-blue-500',
+      },
+    ],
+  },
+  {
+    title: 'CRIS UAO | Prototipo alta fidelidad',
+    image: vivoProto,
+    description:
+      'Diseño de un prototipo de la UI de CRIS UAO, con el fin de hacer pruebas con los usuarios. ',
+    link: 'https://www.figma.com/proto/ofiOvljDfs5LYOJVyAbban/VIVO-UAO?node-id=373-3385&starting-point-node-id=373%3A3385&scaling=scale-down-width&hide-ui=1',
+    techs: [
+      {
+        name: 'Figma',
+        colorClass: 'bg-purple-600',
+      },
+      {
+        name: 'Test Usabilidad',
+        colorClass: 'bg-red-600',
+      },
+    ],
   },
 ];

@@ -7,8 +7,11 @@ import Navbar from '@/components/NavBar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Portfolio Web Camilo Reyes',
+  title: 'Camilo Reyes | Portfolio',
   description: 'This is my portfolio',
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({ children }) {

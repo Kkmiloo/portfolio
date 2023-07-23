@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       className='bg-[#2863EF] sm:px-16 px-6 py-10 pb-72 mx-auto relative overflow-auto'
-      id='About'
+      id='about'
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'

@@ -1,9 +1,12 @@
-import logo from './png/logo-black.png';
-import doddle from './doddle.png';
+import logo from './png/logo-color.png';
 import back from './back.png';
 import front from './front.png';
 import cloud from './cloud.png';
+import vivo from './vivo.png';
+import vivoProto from './figma.png';
+
 import picture from './picture2.png';
+import tracker from './tracker.png';
 
 import css from './tech/css.png';
 import docker from './tech/docker.png';
@@ -28,9 +31,9 @@ import uao from './uao.png';
 
 export {
   logo,
-  doddle,
   back,
   front,
+  tracker,
   cloud,
   picture,
   css,
@@ -50,4 +53,6 @@ export {
   aws,
   azure,
   sql,
+  vivo,
+  vivoProto,
 };
