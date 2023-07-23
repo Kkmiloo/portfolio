@@ -3,7 +3,7 @@ import back from './back.png';
 import front from './front.png';
 import cloud from './cloud.png';
 import vivo from './vivo.png';
-import vivoProto from './figma.png';
+import vivoProto from './proto.png';
 
 import picture from './picture2.png';
 import tracker from './tracker.png';
