@@ -140,13 +140,13 @@ export const works = [
         desc: 'Analizar de contexto de los usuarios para identificar los requisitos del proyecto.',
       },
       {
-        desc: 'Diseñar el sistema multimedia en base a los requerimientos identificados.',
+        desc: 'Diseñar el sistema multimedia con base a los requerimientos identificados.',
       },
       {
         desc: 'Implementar el sistema multimedia, teniendo en cuenta el diseño realizado.',
       },
       {
-        desc: 'Evaluar la implementación del sistema multimedia realizada.',
+        desc: 'Evaluar la implementación del sistema multimedia realizado.',
       },
     ],
     dateRange: 'Junio 2022 - Marzo 2023',

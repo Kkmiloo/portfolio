@@ -8,7 +8,7 @@ export default function Projects() {
       <div className='mx-auto flex flex-col max-w-7xl py-10 '>
         <h2 className=' text-[40px]  font-extrabold'>Proyectos.</h2>
         <p className='text-[20px] pt-5'>
-          Acá podrás encontrar algunos de mis proyectos que he realizado como
+          Aquí podrás encontrar algunos de mis proyectos que he realizado como
           ingeniero multimedia.
         </p>
 
