@@ -22,6 +22,9 @@ import {
   vivo,
   tracker,
   vivoProto,
+  s9,
+  ts,
+  nest,
 } from '@/app/assets';
 
 export const navLinks = [
@@ -34,8 +37,19 @@ export const navLinks = [
     title: 'Experiencia',
   },
   {
-    id: 'contact',
-    title: 'Contacto',
+    id: 'projects',
+    title: 'Proyectos',
+  },
+];
+
+export const cv = [
+  {
+    lang: 'es',
+    url: 'https://drive.google.com/file/d/1KpK_ri0Lp-y6e7EEkSdu767Lm6SdLNue/view?usp=sharing',
+  },
+  {
+    lang: 'en',
+    url: 'https://drive.google.com/file/d/1uJPg1YYovFSgau09Mx_CDbbAZZkmWg8v/view?usp=drive_link',
   },
 ];
 
@@ -54,8 +68,8 @@ export const services = [
         icon: css,
       },
       {
-        name: 'JavaScript',
-        icon: javascript,
+        name: 'TypeScript',
+        icon: ts,
       },
       {
         name: 'React JS',
@@ -83,6 +97,10 @@ export const services = [
       {
         name: 'Java',
         icon: java,
+      },
+      {
+        name: 'NestJs',
+        icon: nest,
       },
       {
         name: 'Spring Boot',
@@ -150,6 +168,28 @@ export const works = [
       },
     ],
     dateRange: 'Junio 2022 - Marzo 2023',
+  },
+  {
+    title: 'Implementation Specialist',
+    image: s9,
+    company: 'Square9 Softworks',
+    description:
+      'Como Implementation Specialist en Square 9 Softworks, garanticé una implementación efectiva y exitosa de la suite de software de la empresa para una variedad de clientes.',
+    items: [
+      {
+        desc: 'Gestionar todo el proceso de implementación para garantizar el cumplimiento de los plazos y objetivos del proyecto.',
+      },
+      {
+        desc: 'Adaptar la suite de software de Square 9 a las necesidades únicas de cada cliente.',
+      },
+      {
+        desc: 'Llevar a cabo la instalación y configuración técnica de la suite de software en el entorno del cliente.',
+      },
+      {
+        desc: 'Proporcionar capacitación integral a los usuarios finales sobre cómo utilizar eficazmente la suite de software.',
+      },
+    ],
+    dateRange: 'Septiembre 2023 - Febrero 2024',
   },
 ];
 

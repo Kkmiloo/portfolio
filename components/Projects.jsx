@@ -4,7 +4,10 @@ import Image from 'next/image';
 
 export default function Projects() {
   return (
-    <section className='sm:px-16 px-6 py-10 pb-20 mx-auto relative overflow-auto  border-t-2'>
+    <section
+      id='projects'
+      className='sm:px-16 px-6 py-10 pb-20 mx-auto relative overflow-auto  border-t-2'
+    >
       <div className='mx-auto flex flex-col max-w-7xl py-10 '>
         <h2 className=' text-[40px]  font-extrabold'>Proyectos.</h2>
         <p className='text-[20px] pt-5'>

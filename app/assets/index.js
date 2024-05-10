@@ -26,10 +26,13 @@ import spring from './tech/spring.png';
 import aws from './tech/aws.png';
 import azure from './tech/azure.png';
 import sql from './tech/sql.png';
-
+import s9 from './s9.png';
 import uao from './uao.png';
-
+import ts from './tech/ts.png';
+import nest from './tech/nest.svg';
 export {
+  nest,
+  ts,
   logo,
   back,
   front,
@@ -55,4 +58,5 @@ export {
   sql,
   vivo,
   vivoProto,
+  s9,
 };
