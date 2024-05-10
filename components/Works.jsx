@@ -12,11 +12,11 @@ export default function Works() {
 
         <div className='container mt-7'>
           <div className='flex flex-col md:grid grid-cols-9 mx-auto p-2'>
-            {works.toReversed().map((work, index) => {
+            {works.reverse().map((work, index) => {
               return index % 2 == 0 ? (
-                <Card work={work} side={'left'} />
+                <Card key={index} work={work} side={'left'} />
               ) : (
-                <Card work={work} />
+                <Card key={index} work={work} />
               );
             })}
           </div>

@@ -7,7 +7,7 @@ export default function About() {
       <svg
         xmlns='http://www.w3.org/2000/svg'
         version='1.1'
-        xmlnsxlink='http://www.w3.org/1999/xlink'
+        xmlnsXlink='http://www.w3.org/1999/xlink'
         xmlnssvgjs='http://svgjs.dev/svgjs'
         viewBox='0 0 800 800'
         id='qqquad'
@@ -15,7 +15,7 @@ export default function About() {
         width={200}
         className='absolute sm:right-0 -top-32 sm:-top-28 w-100  lg:left-auto rig lg:right-60 ml-0 xl:rigth sm:rigth-0 '
       >
-        <g shape-rendering='crispEdges' stroke-linejoin='round' fill='#fff'>
+        <g shapeRendering='crispEdges' strokeLinejoin='round' fill='#fff'>
           <polygon points='600,0 800,200 800,0'></polygon>
           <polygon points='600,100 600,0 500,100'></polygon>
           <polygon points='500,100 400,100 400,0'></polygon>
@@ -53,7 +53,7 @@ export default function About() {
         </g>
         <g
           fill='hsl(220, 62%, 45%)'
-          stroke-width='3'
+          strokeWidth='3'
           stroke='hsl(220, 43%, 13%)'
         ></g>
       </svg>
