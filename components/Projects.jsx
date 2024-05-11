@@ -61,8 +61,7 @@ export default function Projects() {
                   className=' hover:text-blue-600 underline font-bold '
                   target='_blank'
                 >
-                  {' '}
-                  Ver Proyecto
+                  {`${lang === 'es' ? 'Ver Proyecto' : 'View Project'}`}
                 </a>
               </div>
             </div>
