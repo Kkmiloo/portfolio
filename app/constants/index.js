@@ -25,6 +25,7 @@ import {
   s9,
   ts,
   nest,
+  teslo,
 } from '@/app/assets';
 
 export const navLinks = {
@@ -302,22 +303,38 @@ export const projects = [
       },
     ],
   },
-  {
-    title: 'Expense Tracker',
-    image: tracker,
-    description: {
-      es: 'Realicé una aplicación donde puedes llevar un registro preciso de tus gastos diarios.',
-      en: 'I created an application where you can keep an accurate record of your daily expenses.',
-    },
-    link: 'https://kkmiloo.github.io/Expense-Tracker.github.io/',
 
+  {
+    title: 'Teslo API',
+    image: teslo,
+    description: {
+      es: 'API de una tienda de productos con Autenticación y Autorización de usuarios utilizando JWT, Uso de websocket para la creación de un chat',
+      en: 'API of a product store with User Authentication and Authorization using JWT and websocket to create a chat',
+    },
+    link: 'https://github.com/Kkmiloo/TesloAPI',
     techs: [
       {
-        name: 'HTML, CSS, JS',
+        name: 'NestJs',
         colorClass: 'bg-red-600',
       },
       {
-        name: 'React',
+        name: 'PostgreSQL',
+        colorClass: 'bg-blue-600',
+      },
+      {
+        name: 'JWT',
+        colorClass: 'bg-zinc-600',
+      },
+      {
+        name: 'Swagger',
+        colorClass: 'bg-green-800',
+      },
+      {
+        name: 'TypeScript',
+        colorClass: 'bg-blue-700',
+      },
+      {
+        name: 'Docker',
         colorClass: 'bg-blue-500',
       },
     ],
@@ -338,6 +355,27 @@ export const projects = [
       {
         name: 'Test Usabilidad',
         colorClass: 'bg-red-600',
+      },
+    ],
+  },
+
+  {
+    title: 'Expense Tracker',
+    image: tracker,
+    description: {
+      es: 'Realicé una aplicación donde puedes llevar un registro preciso de tus gastos diarios.',
+      en: 'I created an application where you can keep an accurate record of your daily expenses.',
+    },
+    link: 'https://kkmiloo.github.io/Expense-Tracker.github.io/',
+
+    techs: [
+      {
+        name: 'HTML, CSS, JS',
+        colorClass: 'bg-red-600',
+      },
+      {
+        name: 'React',
+        colorClass: 'bg-blue-500',
       },
     ],
   },

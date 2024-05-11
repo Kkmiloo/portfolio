@@ -30,7 +30,9 @@ import s9 from './s9.png';
 import uao from './uao.png';
 import ts from './tech/ts.png';
 import nest from './tech/nest.svg';
+import teslo from './teslo.png';
 export {
+  teslo,
   nest,
   ts,
   logo,
