@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 
 import Navbar from '@/components/NavBar';
 import { portafolio } from './assets';
+import { LangContext } from '@/src/context/LangContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,10 +31,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className='scroll-smooth'>
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

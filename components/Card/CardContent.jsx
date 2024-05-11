@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import CardTitle from './CardTitle';
+import { LangContext } from '@/src/context/LangContext';
 
 export default function CardContent({ work, side }) {
+  const { lang } = useContext(LangContext);
+
   return (
     <>
       <div
@@ -11,17 +14,19 @@ export default function CardContent({ work, side }) {
       >
         <CardTitle work={work} />
         <p className='leading-tight text-justify font-medium'>
-          {work.description}
+          {work.description[lang]}
         </p>
-        <h4 className='font-bold mt-4'>Responsabilidades: </h4>
+        <h4 className='font-bold mt-4'>
+          {lang == 'en' ? 'Responsibility:' : 'Responsabilidades:'}{' '}
+        </h4>
 
         <ul className='list-disc pl-6 mt-6 font-medium'>
-          {work.items.map((item) => (
-            <li key={item.desc}>{item.desc}</li>
+          {work.items.map((item, index) => (
+            <li key={index}>{item.desc[lang]}</li>
           ))}
         </ul>
         <span className=' mt-5 font-bold  md:hidden block  text-blue-500'>
-          {work.dateRange}
+          {work.dateRange[lang]}
         </span>
       </div>
     </>

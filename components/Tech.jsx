@@ -1,14 +1,15 @@
-import { services } from '@/app/constants';
+import { headers, services } from '@/app/constants';
+import { LangContext } from '@/src/context/LangContext';
 import Image from 'next/image';
-import React from 'react';
+import React, { useContext } from 'react';
 
 export default function Tech() {
+  const { lang } = useContext(LangContext);
+
   return (
     <div className='sm:px-16 px-6 sm:py-16 py-10 mx-auto relative -mt-96 text-white'>
       <div className='mx-auto flex flex-col max-w-7xl pt-14 '>
-        <h2 className=' text-[40px]  font-extrabold'>
-          Tecnologías y herramientas
-        </h2>
+        <h2 className=' text-[40px]  font-extrabold'>{headers[lang].techs}</h2>
 
         <div className='w-full mt-10 text-black  font-medium flex lg:flex-row flex-col align-middle justify-evenly  bg-white border border-gray-200 rounded-xl shadow'>
           {services.map((service) => (
@@ -18,7 +19,7 @@ export default function Tech() {
             >
               <Image src={service.icon} width={100} alt={service.title} />
               <h2 className='font-bold text-[20px]'>{service.title}</h2>
-              <p className='text-center'> {service.desc}</p>
+              <p className='text-center'> {service.desc[lang]}</p>
               <h3 className='font-bold text-[#2863EF]'> Dev Tools </h3>
 
               <div className='w-full  grid-cols-2 md:grid-cols-3 grid place-items-center gap-y-5 '>

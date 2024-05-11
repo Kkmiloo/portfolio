@@ -1,7 +1,10 @@
+import { LangContext } from '@/src/context/LangContext';
 import Image from 'next/image';
-import React from 'react';
+import React, { useContext } from 'react';
 
 export default function CardTitle({ work }) {
+  const { lang } = useContext(LangContext);
+
   return (
     <div className='mb-6 flex flex-col lg:flex-row'>
       <div className='mr-5'>

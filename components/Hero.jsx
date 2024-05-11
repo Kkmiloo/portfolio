@@ -1,19 +1,22 @@
 import { picture } from '@/app/assets';
-import { cv } from '@/app/constants';
+import { cv, overview } from '@/app/constants';
+import { LangContext } from '@/src/context/LangContext';
 import Image from 'next/image';
+import { useContext } from 'react';
 
 export default function Hero() {
+  const { lang } = useContext(LangContext);
   return (
     <section className='w-full h-[calc(100vh-88px)] min-h-[800px] justify-center pl-12  mx-auto flex flex-col max-w-7xl sm:px-16 px-6 sm:py-16 z-10 pb-8'>
       <div className='flex justify-end pt-5 md:flex-row flex-col items-center'>
         <div className='flex flex-col justify-around pr-4 md:order-1  order-2 pt-4'>
           <div>
             <h1 className='font-bold lg:text-[70px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mb-3'>
-              Hola, soy <span className='text-[#2863EF]'>Camilo Reyes.</span>
+              {lang == 'es' ? 'Hola, soy' : `Hi, I'm`}{' '}
+              <span className='text-[#2863EF]'>Camilo Reyes.</span>
             </h1>
             <p className='text-[25px] pb-6 font-medium'>
-              Ingeniero Multimedia apasionado por crear soluciones a través del
-              desarrollo web.
+              {overview[lang].description}
             </p>
           </div>
           <div className='flex gap-5 justify-between'>
@@ -45,9 +48,9 @@ export default function Hero() {
             </div>
           </div>
           <div className='mr-10 w-fit mt-6 flex gap-7 flex-col sm:flex-row'>
-            <a href={cv[0].url} target='_blank'>
+            <a href={cv[lang].url} target='_blank'>
               <div className=' border h-full border-blue-700 p-3 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-md flex gap-3'>
-                <p className='font-semibold break-none'>Download CV</p>
+                <p className='font-semibold break-none'>{cv[lang].download}</p>
                 <svg
                   className='h-6 w-6'
                   viewBox='0 0 24 24'
@@ -78,7 +81,7 @@ export default function Hero() {
 
             <a href={`mailto:ca.milo44@hotmail.com`} className='flex'>
               <div className=' p-3 px-4 bg-white box-content hover:bg-blue-50 border-2   border-blue-700 text-blue-700 rounded-md flex gap-3'>
-                <p className='font-semibold break-none'>Mail Me!</p>
+                <p className='font-semibold break-none'>{cv[lang].mail}</p>
                 <svg
                   className='h-6 w-6'
                   viewBox='0 0 24 24'

@@ -1,4 +1,9 @@
+import { headers, overview } from '@/app/constants';
+import { LangContext } from '@/src/context/LangContext';
+import { useContext } from 'react';
+
 export default function About() {
+  const { lang } = useContext(LangContext);
   return (
     <section
       className='bg-[#2863EF] sm:px-16 px-6 py-10 pb-72 mx-auto relative overflow-auto'
@@ -59,20 +64,14 @@ export default function About() {
       </svg>
 
       <div className='mx-auto flex flex-col max-w-7xl py-10 text-white  '>
-        <p className=' font-medium  uppercase'>Sobre Mi</p>
-        <h2 className=' text-[40px]  font-extrabold'>Resumen.</h2>
+        <p className=' font-medium  uppercase'>{headers[lang].about}</p>
+        <h2 className=' text-[40px]  font-extrabold'>
+          {headers[lang].overview}
+        </h2>
 
-        <p className='mt4 text-[20px] pt-5'>
-          Mi enfoque se basa en la fusión de la tecnología para crear
-          experiencias digitales únicas y atractivas. Creo firmemente que cada
-          desafío trae consigo una oportunidad para innovar y superar las
-          expectativas de los usuarios.
-        </p>
+        <p className='mt4 text-[20px] pt-5'>{overview[lang].about}</p>
 
-        <p className='mt4 text-[20px] pt-5'>
-          Te invito a explorar mi portafolio para descubrir cómo mis soluciones
-          multimedia pueden agregar valor a tu proyecto.
-        </p>
+        <p className='mt4 text-[20px] pt-5'>{overview[lang].about2}</p>
       </div>
     </section>
   );

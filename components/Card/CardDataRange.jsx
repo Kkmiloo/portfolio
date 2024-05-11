@@ -1,6 +1,9 @@
-import React from 'react';
+import { LangContext } from '@/src/context/LangContext';
+import React, { useContext } from 'react';
 
 export default function CardDataRange({ work, side }) {
+  const { lang } = useContext(LangContext);
+
   return (
     <div
       className={`${
@@ -8,7 +11,7 @@ export default function CardDataRange({ work, side }) {
       } self-center relative hidden md:block  `}
     >
       <span className='right-4  font-bold relative   text-blue-500'>
-        {work.dateRange}
+        {work.dateRange[lang]}
       </span>
     </div>
   );
