@@ -8,6 +8,7 @@ import vivoProto from './proto.png';
 import picture from './picture2.png';
 import tracker from './tracker.png';
 
+import raffle from './raffle.png';
 import css from './tech/css.png';
 import docker from './tech/docker.png';
 import figma from './tech/figma.png';
@@ -32,6 +33,7 @@ import ts from './tech/ts.png';
 import nest from './tech/nest.svg';
 import teslo from './teslo.png';
 export {
+  raffle,
   teslo,
   nest,
   ts,

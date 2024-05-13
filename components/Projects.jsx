@@ -53,16 +53,19 @@ export default function Projects() {
                 ))}
               </div>
               <p className='font-medium mb-4'>{project.description[lang]}</p>
-
-              <div className=' py-1 inline-block'>
-                &#128279;
-                <a
-                  href={project.link}
-                  className=' hover:text-blue-600 underline font-bold '
-                  target='_blank'
-                >
-                  {`${lang === 'es' ? 'Ver Proyecto' : 'View Project'}`}
-                </a>
+              <div className=' py-1  flex flex-col'>
+                {project.links[lang].map((link, index) => (
+                  <div key={index} className='pb-3'>
+                    &#128279;
+                    <a
+                      href={link.url}
+                      className=' pl-2 mt-3 hover:text-blue-600 underline font-bold '
+                      target='_blank'
+                    >
+                      {link.title}
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
