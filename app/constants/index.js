@@ -27,6 +27,7 @@ import {
   nest,
   teslo,
   raffle,
+  shorten,
 } from '@/app/assets';
 
 export const navLinks = {
@@ -378,6 +379,70 @@ export const projects = [
       {
         name: 'OAuth',
         colorClass: 'bg-gray-700',
+      },
+      {
+        name: 'TypeScript',
+        colorClass: 'bg-blue-700',
+      },
+      {
+        name: 'Docker',
+        colorClass: 'bg-blue-500',
+      },
+    ],
+  },
+  {
+    title: 'Shorten URL',
+    image: shorten,
+    description: {
+      es: 'Aplicación web full stack para acortar URL, implementa autenticación y autorización usando JWT.',
+      en: 'Full stack web application to shorten URLs, implement authentication and authorization using JWT.',
+    },
+    links: {
+      en: [
+        {
+          title: 'Visit the WebPage',
+          url: 'https://shorten-url-puce.vercel.app/',
+        },
+        {
+          title: 'Frontend',
+          url: 'https://github.com/Kkmiloo/shortenUrl',
+        },
+        {
+          title: 'Backend',
+          url: 'https://github.com/Kkmiloo/shorten-backend',
+        },
+      ],
+      es: [
+        {
+          title: 'Visita la WebPage',
+          url: 'https://shorten-url-puce.vercel.app/',
+        },
+        {
+          title: 'Frontend',
+          url: 'https://github.com/Kkmiloo/shortenUrl',
+        },
+        {
+          title: 'Backend',
+          url: 'https://github.com/Kkmiloo/shorten-backend',
+        },
+      ],
+    },
+    techs: [
+      {
+        name: 'NestJs',
+        colorClass: 'bg-red-600',
+      },
+      {
+        name: 'PostgreSQL',
+        colorClass: 'bg-blue-600',
+      },
+      {
+        name: 'JWT',
+        colorClass: 'bg-zinc-600',
+      },
+      {
+        name: 'React',
+        colorClass: 'bg-sky-700',
       },
       {
         name: 'TypeScript',

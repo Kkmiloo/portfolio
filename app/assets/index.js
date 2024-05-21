@@ -7,6 +7,7 @@ import vivoProto from './proto.png';
 
 import picture from './picture2.png';
 import tracker from './tracker.png';
+import shorten from './shorten.png';
 
 import raffle from './raffle.png';
 import css from './tech/css.png';
@@ -63,4 +64,5 @@ export {
   vivo,
   vivoProto,
   s9,
+  shorten,
 };
